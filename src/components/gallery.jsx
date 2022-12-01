@@ -4,29 +4,50 @@ import ImageViewer from "react-simple-image-viewer";
 export const Gallery = props => {
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
+  const [gallery, setGallery] = useState("");
 
   const data = [
-    { thumb: "img/portfolio/01-small.jpg", title: "Lorem Ipsum1" },
-    { thumb: "img/portfolio/02-small.jpg", title: "Lorem Ipsum2" },
-    { thumb: "img/portfolio/03-small.jpg", title: "Lorem Ipsum3" },
-    { thumb: "img/portfolio/04-small.jpg", title: "Lorem Ipsum4" },
-    { thumb: "img/portfolio/05-small.jpg", title: "Lorem Ipsum5" },
-    { thumb: "img/portfolio/06-small.jpg", title: "Lorem Ipsum6" },
-    { thumb: "img/portfolio/07-small.jpg", title: "Lorem Ipsum7" },
-    { thumb: "img/portfolio/08-small.jpg", title: "Lorem Ipsum8" },
-    { thumb: "img/portfolio/09-small.jpg", title: "Lorem Ipsum9" }
+    { thumb: "img/portfolio/SPORTOTAL/ST1.jpg", title: "Sport Total" },
+    { thumb: "img/portfolio/HOTEL ALKAZAR/HA1.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/03-small.jpg", title: "Lorem Ipsum3" }
   ];
 
-  const images = data.map(obj => obj.thumb.replace("-small", "-large"));
+  const ha=[
+    { thumb: "img/portfolio/HOTEL ALKAZAR/HA1.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/HOTEL ALKAZAR/HA2.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/HOTEL ALKAZAR/HA3.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/HOTEL ALKAZAR/HA5.jpg", title: "Alcazar Hotel" }
 
-  const openImageViewer = useCallback(index => {
-    setCurrentImage(index);
+  ];
+
+  const st=[
+    { thumb: "img/portfolio/SPORTOTAL/ST1.jpg", title: "Sport Total" },
+    { thumb: "img/portfolio/SPORTOTAL/ST2.jpg", title: "Sport Total" },
+    { thumb: "img/portfolio/SPORTOTAL/ST3.jpg", title: "Sport Total" },
+    { thumb: "img/portfolio/SPORTOTAL/ST4.jpg", title: "Sport Total" },
+
+  ];
+
+
+
+  const imagesHA = ha.map(obj => obj.thumb.replace("-small", "-large"));
+  const imagesST = st.map(obj => obj.thumb.replace("-small", "-large"));
+ // console.log(index)
+
+  const openImageViewer = useCallback(gal=> {
+    
     setIsViewerOpen(true);
+    if(gal==="Alcazar Hotel")
+    setGallery(imagesHA)
+    else if(gal==="Sport Total"){
+      setGallery(imagesST)
+    }
   }, []);
 
   const closeImageViewer = () => {
     setCurrentImage(0);
     setIsViewerOpen(false);
+    setGallery([])
   };
 
   return (
@@ -39,7 +60,7 @@ export const Gallery = props => {
         <div className="row">
           <div className="portfolio-items">
             {data.map(({ title, thumb }, index) => (
-              <div key={index} onClick={() => openImageViewer(index)} className="col-sm-6 col-md-4 col-lg-4">
+              <div key={index} onClick={() => openImageViewer(title)} className="col-sm-6 col-md-4 col-lg-4">
                 <div className="portfolio-item cursor">
                   <div className="hover-bg">
                     <div className="hover-text">
@@ -54,9 +75,8 @@ export const Gallery = props => {
 
           {isViewerOpen && (
             <ImageViewer
-              src={images}
+              src={gallery}
               backgroundStyle={{ zIndex: 99999 }}
-              currentIndex={currentImage}
               onClose={closeImageViewer}
             />
           )}
