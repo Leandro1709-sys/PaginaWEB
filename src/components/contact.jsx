@@ -20,9 +20,8 @@ export const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     
-    emailjs
-      .sendForm(
-        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
+    emailjs.sendForm(
+        'service_wzfj9re', 'template_hnq6j2k', e.target, 'zNvIZFdf0L3NoKYet'
       )
       .then(
         (result) => {
@@ -41,10 +40,9 @@ export const Contact = (props) => {
           <div className='col-md-8'>
             <div className='row'>
               <div className='section-title'>
-                <h2>Get In Touch</h2>
+                <h2>CONTACTENOS</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                Complete el siguiente formulario para enviarnos un correo electrónico y nos pondremos en contacto con usted lo antes posible.
                 </p>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
@@ -56,7 +54,7 @@ export const Contact = (props) => {
                         id='name'
                         name='name'
                         className='form-control'
-                        placeholder='Name'
+                        placeholder='NOMBRE'
                         required
                         onChange={handleChange}
                       />
@@ -70,7 +68,7 @@ export const Contact = (props) => {
                         id='email'
                         name='email'
                         className='form-control'
-                        placeholder='Email'
+                        placeholder='EMAIL'
                         required
                         onChange={handleChange}
                       />
@@ -84,7 +82,7 @@ export const Contact = (props) => {
                     id='message'
                     className='form-control'
                     rows='4'
-                    placeholder='Message'
+                    placeholder='MENSAJE'
                     required
                     onChange={handleChange}
                   ></textarea>

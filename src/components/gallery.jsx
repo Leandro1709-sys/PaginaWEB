@@ -7,31 +7,50 @@ export const Gallery = props => {
   const [gallery, setGallery] = useState("");
 
   const data = [
-    { thumb: "img/portfolio/SPORTOTAL/ST1.jpg", title: "Sport Total" },
-    { thumb: "img/portfolio/HOTEL ALKAZAR/HA1.jpg", title: "Alcazar Hotel" },
-    { thumb: "img/portfolio/03-small.jpg", title: "Lorem Ipsum3" }
+    { thumb: "img/portfolio/SPORTOTAL/1.jpg", title: "Sport Total" },
+    { thumb: "img/portfolio/ALKAZAR/1.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/BCSJ/1.jpg", title: "Banco San Juan" },
+    { thumb: "img/portfolio/BISTREA/1.jpg", title: "Café Bistrera" },
+    { thumb: "img/portfolio/BURGUE/1.jpg", title: "La Burguesía" },
+    { thumb: "img/portfolio/VER/1.jpg", title: "VER" },
+    { thumb: "img/portfolio/VINITO/1.jpg", title: "Vinito" },
+    { thumb: "img/portfolio/MARIO/1.jpg", title: "Mario Zinni" },
+    { thumb: "img/portfolio/MOCKA/3.jpg", title: "Mocka" }
   ];
 
   const ha=[
-    { thumb: "img/portfolio/HOTEL ALKAZAR/HA1.jpg", title: "Alcazar Hotel" },
-    { thumb: "img/portfolio/HOTEL ALKAZAR/HA2.jpg", title: "Alcazar Hotel" },
-    { thumb: "img/portfolio/HOTEL ALKAZAR/HA3.jpg", title: "Alcazar Hotel" },
-    { thumb: "img/portfolio/HOTEL ALKAZAR/HA5.jpg", title: "Alcazar Hotel" }
+    { thumb: "img/portfolio/ALKAZAR/1.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/ALKAZAR/2.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/ALKAZAR/3.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/ALKAZAR/4.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/ALKAZAR/5.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/ALKAZAR/6.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/ALKAZAR/7.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/ALKAZAR/8.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/ALKAZAR/9.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/ALKAZAR/10.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/ALKAZAR/11.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/ALKAZAR/12.jpg", title: "Alcazar Hotel" }
 
   ];
 
   const st=[
-    { thumb: "img/portfolio/SPORTOTAL/ST1.jpg", title: "Sport Total" },
-    { thumb: "img/portfolio/SPORTOTAL/ST2.jpg", title: "Sport Total" },
-    { thumb: "img/portfolio/SPORTOTAL/ST3.jpg", title: "Sport Total" },
-    { thumb: "img/portfolio/SPORTOTAL/ST4.jpg", title: "Sport Total" },
+    { thumb: "img/portfolio/SPORTOTAL/1.jpg", title: "Sport Total" },
+    { thumb: "img/portfolio/SPORTOTAL/2.jpg", title: "Sport Total" },
+    { thumb: "img/portfolio/SPORTOTAL/3.jpg", title: "Sport Total" },
+    { thumb: "img/portfolio/SPORTOTAL/4.jpg", title: "Sport Total" },
+    { thumb: "img/portfolio/SPORTOTAL/5.jpg", title: "Sport Total" },
+    { thumb: "img/portfolio/SPORTOTAL/6.jpg", title: "Sport Total" },
+    { thumb: "img/portfolio/SPORTOTAL/7.jpg", title: "Sport Total" },
+    { thumb: "img/portfolio/SPORTOTAL/8.jpg", title: "Sport Total" },
+
 
   ];
 
 
 
-  const imagesHA = ha.map(obj => obj.thumb.replace("-small", "-large"));
-  const imagesST = st.map(obj => obj.thumb.replace("-small", "-large"));
+  const imagesHA = ha.map(obj => obj.thumb.replace("-small", ""));
+  const imagesST = st.map(obj => obj.thumb.replace("-small", ""));
  // console.log(index)
 
   const openImageViewer = useCallback(gal=> {
@@ -54,8 +73,8 @@ export const Gallery = props => {
     <div id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Gallery</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+          <h2>PORTFOLIO DE OBRAS</h2>
+       
         </div>
         <div className="row">
           <div className="portfolio-items">

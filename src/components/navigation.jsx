@@ -1,3 +1,4 @@
+import logo from '../LOGO-10.png'
 export const Navigation = (props) => {
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
@@ -15,9 +16,13 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
+          <span tooltip='NHÓM Contrucciones'>
           <a className='navbar-brand page-scroll' href='#page-top'>
-            My Landing Page
-          </a>{' '}
+          NHÓM
+            
+          </a>
+          </span>
+          {' '}
         </div>
 
         <div
@@ -25,29 +30,26 @@ export const Navigation = (props) => {
           id='bs-example-navbar-collapse-1'
         >
           <ul className='nav navbar-nav navbar-right'>
-            <li>
-              <a href='#features' className='page-scroll'>
-                Features
-              </a>
-            </li>
+          
             <li>
               <a href='#about' className='page-scroll'>
-                About
+                QEUIENES SOMOS
               </a>
             </li>
             <li>
               <a href='#services' className='page-scroll'>
-                Services
+              EL EQUIPO
               </a>
             </li>
             <li>
               <a href='#portfolio' className='page-scroll'>
-                Gallery
+              PORTFOLIO
+                
               </a>
             </li>
             <li>
-              <a href='#testimonials' className='page-scroll'>
-                Testimonials
+              <a href='#contact' className='page-scroll'>
+                CONTACTOS
               </a>
             </li>
             
