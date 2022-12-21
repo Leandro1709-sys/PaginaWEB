@@ -7,15 +7,15 @@ export const Gallery = props => {
   const [gallery, setGallery] = useState("");
 
   const data = [
-    { thumb: "img/portfolio/SPORTOTAL/1.jpg", title: "Sport Total" },
-    { thumb: "img/portfolio/ALKAZAR/1.jpg", title: "Alcazar Hotel" },
-    { thumb: "img/portfolio/BCSJ/1.jpg", title: "Banco San Juan" },
-    { thumb: "img/portfolio/BISTREA/1.jpg", title: "Café Bistrera" },
-    { thumb: "img/portfolio/BURGUE/1.jpg", title: "La Burguesía" },
-    { thumb: "img/portfolio/VER/1.jpg", title: "VER" },
-    { thumb: "img/portfolio/VINITO/1.jpg", title: "Vinito" },
-    { thumb: "img/portfolio/MARIO/1.jpg", title: "Mario Zinni" },
-    { thumb: "img/portfolio/MOCKA/3.jpg", title: "Mocka" }
+    { thumb: "img/portfolio/SPORTOTAL/ST1.jpg", title: "Sport Total" },
+    { thumb: "img/portfolio/ALKAZAR/HA1.jpg", title: "Alcazar Hotel" },
+    { thumb: "img/portfolio/BCSJ/BS1.jpg", title: "Banco San Juan" },
+    { thumb: "img/portfolio/BISTREA/BI1.jpg", title: "Café Bistrera" },
+    { thumb: "img/portfolio/BURGUE/BU1.jpg", title: "La Burguesía" },
+    { thumb: "img/portfolio/VER/VE1.jpg", title: "VER" },
+    { thumb: "img/portfolio/VINITO/VI1.jpg", title: "VINITO" },
+    { thumb: "img/portfolio/MARIO/MA1.jpg", title: "Mario Zinni" },
+    { thumb: "img/portfolio/MOCKA/MO1.jpg", title: "Mocka" }
   ];
 
   const ha=[
@@ -47,10 +47,50 @@ export const Gallery = props => {
 
   ];
 
+  const vi=[
+    { thumb: "img/portfolio/VINITO/1.jpg", title: "VINITO" },
+    { thumb: "img/portfolio/VINITO/2.jpg", title: "VINITO" },
+    { thumb: "img/portfolio/VINITO/3.jpg", title: "VINITO" },
+    { thumb: "img/portfolio/VINITO/4.jpg", title: "VINITO" },
+    { thumb: "img/portfolio/VINITO/5.jpg", title: "VINITO" },
+    { thumb: "img/portfolio/VINITO/6.jpg", title: "VINITO" },
+    { thumb: "img/portfolio/VINITO/7.jpg", title: "VINITO" },
+    { thumb: "img/portfolio/VINITO/8.jpg", title: "VINITO" },
 
+
+  ];
+
+  const bs=[
+    { thumb: "img/portfolio/BCSJ/1.jpg", title: "Banco San Juan" },
+    { thumb: "img/portfolio/BCSJ/2.jpg", title: "Banco San Juan" },
+    { thumb: "img/portfolio/BCSJ/3.jpg", title: "Banco San Juan" },
+    { thumb: "img/portfolio/BCSJ/4.jpg", title: "Banco San Juan" },
+    { thumb: "img/portfolio/BCSJ/5.jpg", title: "Banco San Juan" },
+    { thumb: "img/portfolio/BCSJ/6.jpg", title: "Banco San Juan" },
+    { thumb: "img/portfolio/BCSJ/7.jpg", title: "Banco San Juan" },
+    { thumb: "img/portfolio/BCSJ/8.jpg", title: "Banco San Juan" },
+
+
+  ];
+
+  const bi=[
+    { thumb: "img/portfolio/BISTREA/1.jpg", title: "Café Bistrera" },
+    { thumb: "img/portfolio/BISTREA/2.jpg", title: "Café Bistrera" },
+    { thumb: "img/portfolio/BISTREA/3.jpg", title: "Café Bistrera" },
+    { thumb: "img/portfolio/BISTREA/4.jpg", title: "Café Bistrera" },
+    { thumb: "img/portfolio/BISTREA/5.jpg", title: "Café Bistrera" },
+    { thumb: "img/portfolio/BISTREA/6.jpg", title: "Café Bistrera" },
+    { thumb: "img/portfolio/BISTREA/7.jpg", title: "Café Bistrera" },
+    { thumb: "img/portfolio/BISTREA/8.jpg", title: "Café Bistrera" },
+
+
+  ];
 
   const imagesHA = ha.map(obj => obj.thumb.replace("-small", ""));
   const imagesST = st.map(obj => obj.thumb.replace("-small", ""));
+  const imagesVI = vi.map(obj => obj.thumb.replace("-small", ""));
+  const imagesBS = bs.map(obj => obj.thumb.replace("-small", ""));
+  const imagesBI = bi.map(obj => obj.thumb.replace("-small", ""));
  // console.log(index)
 
   const openImageViewer = useCallback(gal=> {
@@ -61,6 +101,16 @@ export const Gallery = props => {
     else if(gal==="Sport Total"){
       setGallery(imagesST)
     }
+    else if(gal==="VINITO"){
+      setGallery(imagesVI)
+    }
+    else if(gal==="Banco San Juan"){
+      setGallery(imagesBS)
+    }
+    else if(gal==="Café Bistrera"){
+      setGallery(imagesBI)
+    }
+
   }, []);
 
   const closeImageViewer = () => {
