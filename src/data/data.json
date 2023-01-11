@@ -1,7 +1,8 @@
 {
     "Header": {
+        "icon": "img/LOGO-12B.png",
         "title": "LA MAGIA ESTÁ EN LOS DETALLES",
-        "paragraph": "HOLA, BIEVENIDO SENTITE EN CASA..."
+        "paragraph": "bienvenido sentite en casa..."
 
     },
     "About": {
@@ -20,18 +21,18 @@
         ]
     },
     "Services": [{
-            "icon": "img/team/01.jpg",
-            "name": "Lorem ipsum dolor",
+            "icon": "img/diseño.png",
+            "name": "DISEÑO",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
         },
         {
-            "icon": "img/team/02.jpg",
-            "name": "Consectetur adipiscing",
+            "icon": "img/ejec.png",
+            "name": "EJECUCIÓN INTEGRAL",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
         },
         {
-            "icon": "img/team/03.jpg",
-            "name": "Lorem ipsum dolor",
+            "icon": "img/casa.png",
+            "name": "STELL CONCRETE - CASSAFORMA",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
         }
 

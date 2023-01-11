@@ -15,7 +15,7 @@ export const Gallery = props => {
     { thumb: "img/portfolio/VER/VE1.jpg", title: "VER" },
     { thumb: "img/portfolio/VINITO/VI1.jpg", title: "VINITO" },
     { thumb: "img/portfolio/MARIO/MA1.jpg", title: "Mario Zinni" },
-    { thumb: "img/portfolio/MOCKA/MO1.jpg", title: "Mocka" }
+    { thumb: "img/portfolio/MOCKA/3.jpg", title: "Mocka" }
   ];
 
   const ha=[
@@ -111,7 +111,7 @@ export const Gallery = props => {
       setGallery(imagesBI)
     }
 
-  }, []);
+  },   );
 
   const closeImageViewer = () => {
     setCurrentImage(0);

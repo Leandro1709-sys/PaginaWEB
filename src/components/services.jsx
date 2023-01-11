@@ -3,9 +3,15 @@ export const Services = (props) => {
     <div id='services' className='text-center'>
       <div className='container'>
         <div className='section-title'>
-          <h2>el equipo</h2>
+          <h2>Que hacemos?</h2>
           <p>
-            Acá esta los intregantes del equipo NHÓM
+          Nos dedicamos al diseño y ejecución integral de viviendas, oficinas y locales comerciales, así como a la ejecución de proyectos
+          <br></br>con sistema steel concrete y cassaforma.
+          <br></br>
+          <br></br>
+        
+Creemos en el trabajo en equipo para brindar mejores respuesta al cliente, apuntando a sistemas constructivos no tradicionales,   
+<br></br> que mejoren los procesos y la calidad de obra.
           </p>
         </div>
         <div className='row'>
@@ -13,10 +19,10 @@ export const Services = (props) => {
             ? props.data.map((d, i) => (
                 <div key={`${d.name}-${i}`} className='col-md-4'>
                   {' '}
-                  <img src={d.icon} className={d.icon}></img>
+                  <img src={d.icon} className='iconos'></img>
                   <div className='service-desc'>
                     <h3>{d.name}</h3>
-                    <p>{d.text}</p>
+                    
                   </div>
                 </div>
               ))
