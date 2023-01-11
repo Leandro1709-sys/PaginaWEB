@@ -111,11 +111,7 @@ export const Gallery = props => {
       setGallery(imagesBI)
     }
 
-<<<<<<< HEAD
   },   );
-=======
-  }, );
->>>>>>> 3b3ed318c1429c3fd67f77d417afe031372db6c0
 
   const closeImageViewer = () => {
     setCurrentImage(0);
