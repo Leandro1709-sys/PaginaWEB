@@ -342,7 +342,7 @@ header .intro-text {
 	transition: 0.5s;
 }
 
-#services .section-title h2::after {
+#services .section-title h2::after { 
 	position: absolute;
 	content: "";
 	background:linear-gradient(to right, #000000 0%, #c4c4c4 100%);
