@@ -1,6 +1,6 @@
 {
   "name": "landingpage-react-template",
-  "private": true,
+  "private": false,
   "homepage": ".",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
