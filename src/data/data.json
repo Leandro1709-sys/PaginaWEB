@@ -21,12 +21,12 @@
         ]
     },
     "Services": [{
-            "icon": "img/diseño.png",
+            "icon": "img/diseñob.png",
             "name": "DISEÑO",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
         },
         {
-            "icon": "img/ejec.png",
+            "icon": "img/ejecb.png",
             "name": "EJECUCIÓN INTEGRAL",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
         },
