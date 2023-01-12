@@ -14,8 +14,9 @@ Creemos en el trabajo en equipo para brindar mejores respuesta al cliente, apunt
 <br></br> que mejoren los procesos y la calidad de obra.
           </p>
         </div>
+        <div className="contLogo">
         <div className='row'>
-          {props.data
+         {props.data
             ? props.data.map((d, i) => (
                 <div key={`${d.name}-${i}`} className='col-md-4'>
                   {' '}
@@ -27,6 +28,7 @@ Creemos en el trabajo en equipo para brindar mejores respuesta al cliente, apunt
                 </div>
               ))
             : 'loading'}
+            </div>
         </div>
       </div>
     </div>

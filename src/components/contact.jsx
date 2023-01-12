@@ -90,7 +90,7 @@ export const Contact = (props) => {
                 </div>
                 <div id='success'></div>
                 <button type='submit' className='btn btn-custom btn-lg'>
-                  Send Message
+                 ENVIAR MENSAJE
                 </button>
               </form>
             </div>
@@ -100,7 +100,7 @@ export const Contact = (props) => {
               <h3>Contact Info</h3>
               <p>
                 <span>
-                  <i className='fa fa-map-marker'></i> Address
+                  <i className='fa fa-map-marker'></i> Dirección
                 </span>
                 {props.data ? props.data.address : 'loading'}
               </p>
@@ -108,7 +108,7 @@ export const Contact = (props) => {
             <div className='contact-item'>
               <p>
                 <span>
-                  <i className='fa fa-phone'></i> Phone
+                  <i className='fa fa-phone'></i> Teléfono
                 </span>{' '}
                 {props.data ? props.data.phone : 'loading'}
               </p>

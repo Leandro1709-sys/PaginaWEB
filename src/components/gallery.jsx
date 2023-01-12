@@ -15,7 +15,7 @@ export const Gallery = props => {
     { thumb: "img/portfolio/VER/VE1.jpg", title: "VER" },
     { thumb: "img/portfolio/VINITO/VI1.jpg", title: "VINITO" },
     { thumb: "img/portfolio/MARIO/MA1.jpg", title: "Mario Zinni" },
-    { thumb: "img/portfolio/MOCKA/3.jpg", title: "Mocka" }
+    { thumb: "img/portfolio/LIDER/LI1.jpg", title: "Lider" }
   ];
 
   const ha=[
@@ -85,12 +85,65 @@ export const Gallery = props => {
 
 
   ];
+  const bu=[
+    { thumb: "img/portfolio/BURGUE/1.jpg", title: "La Burguesía" },
+    { thumb: "img/portfolio/BURGUE/2.jpg", title: "La Burguesía" },
+    { thumb: "img/portfolio/BURGUE/3.jpg", title: "La Burguesía" },
+    { thumb: "img/portfolio/BURGUE/4.jpg", title: "La Burguesía" },
+    { thumb: "img/portfolio/BURGUE/5.jpg", title: "La Burguesía" },
+    { thumb: "img/portfolio/BURGUE/6.jpg", title: "La Burguesía" },
+    { thumb: "img/portfolio/BURGUE/7.jpg", title: "La Burguesía" },
+    { thumb: "img/portfolio/BURGUE/8.jpg", title: "La Burguesía" },
+
+
+  ];
+  const ve=[
+    { thumb: "img/portfolio/VER/1.jpg", title: "VER" },
+    { thumb: "img/portfolio/VER/2.jpg", title: "VER" },
+    { thumb: "img/portfolio/VER/3.jpg", title: "VER" },
+    { thumb: "img/portfolio/VER/4.jpg", title: "VER" },
+    { thumb: "img/portfolio/VER/5.jpg", title: "VER" },
+    { thumb: "img/portfolio/VER/6.jpg", title: "VER" },
+    { thumb: "img/portfolio/VER/7.jpg", title: "VER" },
+    { thumb: "img/portfolio/VER/8.jpg", title: "VER" },
+
+
+  ];
+  const ma=[
+    { thumb: "img/portfolio/MARIO/1.jpg", title: "Mario Zinni" },
+    { thumb: "img/portfolio/MARIO/2.jpg", title: "Mario Zinni" },
+    { thumb: "img/portfolio/MARIO/3.jpg", title: "Mario Zinni" },
+    { thumb: "img/portfolio/MARIO/4.jpg", title: "Mario Zinni" },
+    { thumb: "img/portfolio/MARIO/5.jpg", title: "Mario Zinni" },
+    { thumb: "img/portfolio/MARIO/6.jpg", title: "Mario Zinni" },
+    { thumb: "img/portfolio/MARIO/7.jpg", title: "Mario Zinni" },
+    { thumb: "img/portfolio/MARIO/8.jpg", title: "Mario Zinni" },
+
+
+  ];
+  const li=[
+    { thumb: "img/portfolio/LIDER/1.jpg", title: "Lider" },
+    { thumb: "img/portfolio/LIDER/2.jpg", title: "Lider" },
+    { thumb: "img/portfolio/LIDER/3.jpg", title: "Lider" },
+    { thumb: "img/portfolio/LIDER/4.jpg", title: "Lider" },
+    { thumb: "img/portfolio/LIDER/5.jpg", title: "Lider" },
+    { thumb: "img/portfolio/LIDER/6.jpg", title: "Lider" },
+    { thumb: "img/portfolio/LIDER/7.jpg", title: "Lider" },
+    { thumb: "img/portfolio/LIDER/8.jpg", title: "Lider" },
+    
+
+  ];
+
 
   const imagesHA = ha.map(obj => obj.thumb.replace("-small", ""));
   const imagesST = st.map(obj => obj.thumb.replace("-small", ""));
   const imagesVI = vi.map(obj => obj.thumb.replace("-small", ""));
   const imagesBS = bs.map(obj => obj.thumb.replace("-small", ""));
   const imagesBI = bi.map(obj => obj.thumb.replace("-small", ""));
+  const imagesBU = bu.map(obj => obj.thumb.replace("-small", ""));
+  const imagesLI = li.map(obj => obj.thumb.replace("-small", ""));
+  const imagesMA = ma.map(obj => obj.thumb.replace("-small", ""));
+  const imagesVE = ve.map(obj => obj.thumb.replace("-small", ""));
  // console.log(index)
 
   const openImageViewer = useCallback(gal=> {
@@ -110,6 +163,19 @@ export const Gallery = props => {
     else if(gal==="Café Bistrera"){
       setGallery(imagesBI)
     }
+    else if(gal==="La Burguesía"){
+      setGallery(imagesBU)
+    }
+    else if(gal==="Lider"){
+      setGallery(imagesLI)
+    }
+    else if(gal==="Mario Zinni"){
+      setGallery(imagesMA)
+    }
+    else if(gal==="VER"){
+      setGallery(imagesVE)
+    }
+
 
   },   );
 
