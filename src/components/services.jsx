@@ -22,7 +22,7 @@ Creemos en el trabajo en equipo para brindar mejores respuesta al cliente, apunt
                   {' '}
                   <img src={d.icon} className='iconos'></img>
                   <div className='service-desc'>
-                    <h3>{d.name}</h3>
+                    <h3> {d.name}</h3>
                     
                   </div>
                 </div>

@@ -76,11 +76,25 @@ hr {
 }
 #menu a.navbar-brand {
 	font-family: 'Oswald', sans-serif;
-	font-size: 26px;
+	font-size: 38px;
 	font-weight: 700;
-	color: #333;
+	color: rgb(0, 0, 0);
 	text-transform: uppercase;
+	text-shadow: 0.1em 0.1em 0.2em rgba(121, 121, 121, 0.61);
+	transition: 0.1s;
+
 }
+#menu a:hover{
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	text-shadow: 0.1em 0.1em 0.2em rgba(66, 66, 66, 0.507);
+	
+
+}
+
 #menu.navbar-default .navbar-nav > li > a {
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
@@ -194,6 +208,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background-size: cover;
 	-o-background-size: cover;
 }
+
 .intro .overlay {
 	background-image: url('../../src/LOGO-10.png') ; 
    /* background: rgb(129, 121, 108); */
@@ -218,6 +233,18 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-weight: 800;
 	color: #000000;
 }
+.intro .btn-custom {
+	font-family: 'Oswald', sans-serif;
+	margin: 80px 0;
+	color: black;
+	background: transparent;
+	border: 2px solid rgb(0, 0, 0);
+}
+.intro .btn-custom:hover {
+	font-family: 'Oswald', sans-serif;
+	color: #ffffff;
+	background: rgb(0, 0, 0);
+}
 .intro p {
 	font-family: 'Oswald', sans-serif;
 	color: rgb(0, 0, 0);
@@ -228,9 +255,16 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	/* margin-bottom: 60px; */
 }
 .logo12{
-	padding-top: 45%;
+	padding-top: 27%;
 	width: 70%;
 	
+}
+@media only screen and (max-width: 700px) {
+    .logo12{
+		padding-top: 60%;
+		width: 70%;
+		
+	}
 }
 header .intro-text {
 
@@ -256,7 +290,7 @@ header .intro-text {
 }
 /* About Section */
 #about {
-	padding: 100px 0;
+	padding: 150px 0;
 	background-color:rgb(255, 255, 255);
 }
 #about h3 {
@@ -313,8 +347,8 @@ header .intro-text {
 #services {
 	font-family: 'Oswald', sans-serif;
 	width: 100%;
-	padding: 100px 0;
-	background-image: url('../img/portfolio/ALKAZAR/8.JPG') ;  
+	padding: 150px 0; 
+	background-image: url('../img/portfolio/BISTREA/9.JPG') ;  
 	background-size: cover;
 	position: relative;
 
@@ -335,19 +369,17 @@ header .intro-text {
 	text-shadow: 0.1em 0.1em 0.1em rgb(0, 0, 0);
 }
 #services .iconos {
-	width: 75px;
+	width: 60px;
 	transition: 0.5s;
 	
 }
 
 #services .container{
-
 	width:100%;
 	align-items: center;
 	justify-content: center;
-	background-color: #00000052;
-	background-size: cover;
-
+	background-color: #00000073;
+	box-shadow: 0 0 50px rgba(255, 255, 255, 0.349);
 }
 
 #services .section-title h2::after { 

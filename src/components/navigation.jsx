@@ -28,7 +28,7 @@ export const Navigation = (props) => {
           </button>
           <span tooltip='NHÓM Contrucciones'>
           <a className='navbar-brand page-scroll' href='#page-top' onClick={()=>cerrar()}>
-          NHÓM
+           NHÓM
             
           </a>
           </span>
