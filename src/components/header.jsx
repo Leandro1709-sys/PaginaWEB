@@ -1,10 +1,11 @@
 import ParticlesBg from "particles-bg";
 
+
 export const Header = (props) => {
   return (
     <header id='header'>
       <div className='intro'>
-         <ParticlesBg type="cobweb" bg={{zIndex: 0, position:"absolute", top:0}} /> 
+         <ParticlesBg type="cobweb"  bg={{zIndex: 0, position:"absolute", top:0}} /> 
         <div className='overlay'>
           <div className='container'>
   

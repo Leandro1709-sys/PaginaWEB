@@ -7,15 +7,18 @@ export const Gallery = props => {
   const [gallery, setGallery] = useState("");
 
   const data = [
-    { thumb: "img/portfolio/SPORTOTAL/ST1.jpg", title: "Sport Total" },
-    { thumb: "img/portfolio/ALKAZAR/HA1.jpg", title: "Alcazar Hotel" },
-    { thumb: "img/portfolio/BCSJ/BS1.jpg", title: "Banco San Juan" },
-    { thumb: "img/portfolio/BISTREA/BI1.jpg", title: "Café Bistrera" },
-    { thumb: "img/portfolio/BURGUE/BU1.jpg", title: "La Burguesía" },
-    { thumb: "img/portfolio/VER/VE1.jpg", title: "VER" },
-    { thumb: "img/portfolio/VINITO/VI1.jpg", title: "VINITO" },
-    { thumb: "img/portfolio/MARIO/MA1.jpg", title: "Mario Zinni" },
-    { thumb: "img/portfolio/LIDER/LI1.jpg", title: "Lider" }
+    { thumb: "img/portfolio/SPORTOTAL/ST1.jpg", title: "Sport Total",sub: "local de ropa" },
+    { thumb: "img/portfolio/ALKAZAR/HA1.jpg", title: "Alcazar Hotel",sub: "local de ropa" },
+    { thumb: "img/portfolio/BCSJ/BS1.jpg", title: "Banco San Juan",sub: "local de ropa" },
+    { thumb: "img/portfolio/BISTREA/BI1.jpg", title: "Café Bistrera",sub: "local de ropa" },
+    { thumb: "img/portfolio/BURGUE/BU1.jpg", title: "La Burguesía",sub: "local de ropa" },
+    { thumb: "img/portfolio/VER/VE1.jpg", title: "Ver", sub: "local de ropa" },
+    { thumb: "img/portfolio/VINITO/VI1.jpg", title: "VINITO",sub: "local de ropa" },
+    { thumb: "img/portfolio/MARIO/MA1.jpg", title: "Mario Zinni",sub: "local de ropa" },
+    { thumb: "img/portfolio/LIDER/LI1.jpg", title: "Lider",sub: "local de ropa" },
+    { thumb: "img/portfolio/VINITO/VI1.jpg", title: "VINITO",sub: "local de ropa" },
+    { thumb: "img/portfolio/VINITO/VI1.jpg", title: "VINITO",sub: "local de ropa" },
+    { thumb: "img/portfolio/VINITO/VI1.jpg", title: "VINITO",sub: "local de ropa" },
   ];
 
   const ha=[
@@ -174,7 +177,7 @@ export const Gallery = props => {
     }
     else if(gal==="VER"){
       setGallery(imagesVE)
-    }
+    } 
 
 
   },   );
@@ -189,17 +192,19 @@ export const Gallery = props => {
     <div id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>PORTFOLIO DE OBRAS</h2>
+          <h2>PORTFOLIO</h2>
        
         </div>
         <div className="row">
           <div className="portfolio-items">
-            {data.map(({ title, thumb }, index) => (
+            {data.map(({ title, thumb, sub }, index) => (
+              
               <div key={index} onClick={() => openImageViewer(title)} className="col-sm-6 col-md-4 col-lg-4">
                 <div className="portfolio-item cursor">
                   <div className="hover-bg">
                     <div className="hover-text">
                       <h4>{title}</h4>
+                      <h6>{sub}</h6>
                     </div>
                     <img src={thumb} className="img-responsive" alt="Project Title" />{" "}
                   </div>

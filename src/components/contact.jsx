@@ -1,5 +1,6 @@
-import { useState } from 'react'
-import emailjs from 'emailjs-com'
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
+import swal from 'sweetalert';
 
 const initialState = {
   name: '',
@@ -25,11 +26,14 @@ export const Contact = (props) => {
       )
       .then(
         (result) => {
-          console.log(result.text)
+          swal("", "Mensaje enviado correctamente!", "success");
+          document.getElementById('name').value='';
+          document.getElementById('email').value='';
+          document.getElementById('message').value='';
           clearState()
         },
         (error) => {
-          console.log(error.text)
+          swal("ERROR EN ENVIO", error.text, "error");
         }
       )
   }
@@ -127,18 +131,13 @@ export const Contact = (props) => {
               <div className='social'>
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : '/'}>
+                    <a href={props.data ? props.data.facebook : 'https://www.facebook.com/profile.php?id=100086718440542'} target="_blank">
                       <i className='fa fa-facebook'></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.twitter : '/'}>
-                      <i className='fa fa-twitter'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : '/'}>
-                      <i className='fa fa-youtube'></i>
+                    <a href={props.data ? props.data.instagram : 'https://www.instagram.com/nhomconstrucciones/'} target="_blank" >
+                      <i className='fa fa-instagram'></i>
                     </a>
                   </li>
                 </ul>

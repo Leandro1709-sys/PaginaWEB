@@ -1,6 +1,6 @@
 {
     "Header": {
-        "icon": "img/LOGO-12B.png",
+        "icon": "img/LOGO-12.png",
         "title": "LA MAGIA ESTÁ EN LOS DETALLES",
         "paragraph": "bienvenido sentite en casa..."
 
@@ -95,7 +95,8 @@
         "email": "info@company.com",
         "facebook": "fb.com",
         "twitter": "twitter.com",
-        "youtube": "youtube.com"
+        "youtube": "youtube.com",
+        "instagram": "instagram.com"
     },
     "Features": [{
             "icon": "fa fa-comments-o",
