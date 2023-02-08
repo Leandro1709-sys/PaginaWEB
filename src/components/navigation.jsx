@@ -43,7 +43,7 @@ export const Navigation = (props) => {
           
             <li>
               <a href='#about' className='page-scroll'  onClick={()=>cerrar()}>
-                QEUIENES SOMOS?
+                QUIENES SOMOS?
               </a>
             </li>
             <li>
