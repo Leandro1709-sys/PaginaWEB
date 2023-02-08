@@ -1,10 +1,16 @@
 import ParticlesBg from "particles-bg";
+import ImageSlider from "./Slider";
 
 
 export const Header = (props) => {
   return (
+   
     <header id='header'>
-      <div className='intro'>
+     
+  
+    
+  
+        <div className='intro'>
          <ParticlesBg type="cobweb"  bg={{zIndex: 0, position:"absolute", top:0}} /> 
         <div className='overlay'>
           <div className='container'>
@@ -31,7 +37,12 @@ export const Header = (props) => {
             </div>
           </div>
         </div>
-      </div>
+        </div>
+       
+     
+ 
+     
     </header>
+   
   )
 }
