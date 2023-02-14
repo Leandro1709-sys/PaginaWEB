@@ -200,6 +200,11 @@ PublishScripts/
 csx/
 *.build.csdef
 
+# ignora carpeta build
+development.log
+build
+
+
 # Microsoft Azure Emulator
 ecf/
 rcf/

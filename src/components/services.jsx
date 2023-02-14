@@ -3,14 +3,14 @@ export const Services = (props) => {
     <div id='services' className='text-center'>
       <div className='container'>
         <div className='section-title'>
-          <h2>Que hacemos?</h2>
+          <h2>¿Qué hacemos?</h2>
           <p>
           Nos dedicamos al diseño y ejecución integral de viviendas, oficinas y locales comerciales, así como a la ejecución de proyectos
           <br></br>con sistema steel concrete y cassaforma.
           <br></br>
           <br></br>
         
-Creemos en el trabajo en equipo para brindar mejores respuesta al cliente, apuntando a sistemas constructivos no tradicionales,   
+Creemos en el trabajo en equipo para brindar mejores respuestas al cliente, apuntando a sistemas constructivos no tradicionales,   
 <br></br> que mejoren los procesos y la calidad de obra.
           </p>
         </div>

@@ -7,15 +7,15 @@ export const Gallery = props => {
   const [gallery, setGallery] = useState("");
 
   const data = [
-    { thumb: "img/portfolio/BCSJ/BS1.jpg", title: "BCSJ",sub: "bolsa de comercio de San Juan" },
-    { thumb: "img/portfolio/BITREA/BI1.jpg", title: "BITREA",sub: "café" },
-    { thumb: "img/portfolio/ALKAZAR/HA1.jpg", title: "ALKAZAR",sub: "hotel" },
-    { thumb: "img/portfolio/LIDERAR/LI1.jpg", title: "LIDERAR",sub: "oficinas" },
-    { thumb: "img/portfolio/MAPAL/MA1.jpg", title: "MAPAL",sub: "oficinas" },
-    { thumb: "img/portfolio/MOKKA/MO1.jpg", title: "MOKKA", sub: "mza bar café" },
-    { thumb: "img/portfolio/SPORTOTAL/SP1.jpg", title: "SPORT TOTAL",sub: "local comercial" },
-    { thumb: "img/portfolio/VER/VE1.jpg", title: "VER",sub: "local comercial" },
-    { thumb: "img/portfolio/VINITO/VI1.jpg", title: "VINITO",sub: "bar" },
+    { thumb: "img/portfolio/BCSJ/BS1.jpg", title: "BCSJ",sub: "Bolsa de comercio de San Juan" },
+    { thumb: "img/portfolio/BITREA/BI1.jpg", title: "BISTREA",sub: "Café" },
+    { thumb: "img/portfolio/ALKAZAR/HA1.jpg", title: "ALKAZAR",sub: "Hotel" },
+    { thumb: "img/portfolio/LIDERAR/LI1.jpg", title: "LIDERAR",sub: "Oficinas" },
+    { thumb: "img/portfolio/MAPAL/MA1.jpg", title: "MAPAL",sub: "Oficinas" },
+    { thumb: "img/portfolio/MOKKA/MO1.jpg", title: "MOKKA - Sucursal peatonal San Martín", sub: "Café" },
+    { thumb: "img/portfolio/SPORTOTAL/SP1.jpg", title: "SPORTOTAL",sub: "Local comercial" },
+    { thumb: "img/portfolio/VER/VE1.jpg", title: "VER",sub: "Local comercial" },
+    { thumb: "img/portfolio/VINITO/VI1.jpg", title: "VINITO",sub: "Resto-bar" },
    
   ];
 
@@ -54,13 +54,13 @@ export const Gallery = props => {
   ];
 
   const bi=[
-    { thumb: "img/portfolio/BITREA/1.jpg", title: "Café Bitrera" },
-    { thumb: "img/portfolio/BITREA/2.jpg", title: "Café Bitrera" },
-    { thumb: "img/portfolio/BITREA/3.jpg", title: "Café Bitrera" },
-    { thumb: "img/portfolio/BITREA/4.jpg", title: "Café Bitrera" },
-    { thumb: "img/portfolio/BITREA/5.jpg", title: "Café Bitrera" },
-    { thumb: "img/portfolio/BITREA/6.jpg", title: "Café Bitrera" },
-    { thumb: "img/portfolio/BITREA/7.jpg", title: "Café Bitrera" },
+    { thumb: "img/portfolio/BITREA/1.jpg", title: "Café Bistrera" },
+    { thumb: "img/portfolio/BITREA/2.jpg", title: "Café Bistrera" },
+    { thumb: "img/portfolio/BITREA/3.jpg", title: "Café Bistrera" },
+    { thumb: "img/portfolio/BITREA/4.jpg", title: "Café Bistrera" },
+    { thumb: "img/portfolio/BITREA/5.jpg", title: "Café Bistrera" },
+    { thumb: "img/portfolio/BITREA/6.jpg", title: "Café Bistrera" },
+    { thumb: "img/portfolio/BITREA/7.jpg", title: "Café Bistrera" },
   ];
   
   const mo=[
@@ -129,7 +129,7 @@ export const Gallery = props => {
     else if(gal==="BCSJ"){
       setGallery(imagesBS)
     }
-    else if(gal==="BITREA"){
+    else if(gal==="BISTREA"){
       setGallery(imagesBI)
     }
     

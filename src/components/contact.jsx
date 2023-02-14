@@ -44,7 +44,7 @@ export const Contact = (props) => {
           <div className='col-md-8'>
             <div className='row'>
               <div className='section-title'>
-                <h2>CONTACTENOS</h2>
+                <h2>CONTACTO</h2>
                 <p>
                 Complete el siguiente formulario para enviarnos un correo electrónico y nos pondremos en contacto con usted lo antes posible.
                 </p>
@@ -101,12 +101,12 @@ export const Contact = (props) => {
           </div>
           <div className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>
-              <h3>Contact Info</h3>
+              <h3></h3>
               <p>
                 <span>
                   <i className='fa fa-map-marker'></i> Dirección
                 </span>
-                {props.data ? props.data.address : 'loading'}
+                Ignacio de la Roza 936 (oeste)
               </p>
             </div>
             <div className='contact-item'>
@@ -114,7 +114,7 @@ export const Contact = (props) => {
                 <span>
                   <i className='fa fa-phone'></i> Teléfono
                 </span>{' '}
-                {props.data ? props.data.phone : 'loading'}
+                +54 9 264-4438248
               </p>
             </div>
             <div className='contact-item'>
@@ -122,7 +122,7 @@ export const Contact = (props) => {
                 <span>
                   <i className='fa fa-envelope-o'></i> Email
                 </span>{' '}
-                {props.data ? props.data.email : 'loading'}
+                nhomconstrucciones@gmail.com
               </p>
             </div>
           </div>
@@ -138,6 +138,11 @@ export const Contact = (props) => {
                   <li>
                     <a href={props.data ? props.data.instagram : 'https://www.instagram.com/nhomconstrucciones/'} target="_blank" >
                       <i className='fa fa-instagram'></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={props.data ? props.data.whatsapp : 'https://wa.me/2644438248/'} target="_blank" >
+                      <i className='fa fa-whatsapp'></i>
                     </a>
                   </li>
                 </ul>

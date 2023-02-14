@@ -6,7 +6,7 @@
 
     },
     "About": {
-        "paragraph": "Somos la unión de 2 estudios, provenientes del amor por el diseño, de la búsqueda constante de la identidad, de la autenticidad y de la innovación, que empezamos a coincidir cada vez con mayor frecuencia en proyectos, y notábamos que esta coincidencia se daba también en nuestros criterios y maneras de pensar, nos íbamos dando cuenta que nos complementábamos, y queríamos tener algo en común, así nace NHÓM, uniéndonos para potenciar nuestras capacidades/cualidades, y dedicarnos a ejecutar proyectos, con nuevos materiales y sistemas constructivos.",
+        "paragraph": "Somos la unión de 2 estudios, provenientes del amor por el diseño, de la búsqueda constante de la identidad, de la autenticidad y de la innovación, que empezamos a coincidir cada vez con mayor frecuencia en proyectos, y notábamos que esta coincidencia se daba también en nuestros criterios y maneras de pensar. Nos íbamos dando cuenta que nos complementábamos, y queríamos tener algo en común, así nace NHÓM, uniéndonos para potenciar nuestras capacidades/cualidades, y dedicarnos a ejecutar proyectos, con nuevos materiales y sistemas constructivos.",
         "Why": [
             "Lorem ipsum dolor",
             "Tempor incididunt",
@@ -90,13 +90,14 @@
         }
     ],
     "Contact": {
-        "address": "4321 California St, San Francisco, CA 12345 ",
-        "phone": "+1 123 456 1234",
-        "email": "info@company.com",
+        "address": "Ignacio de la Roza 936 (oeste)",
+        "phone": "+54 9 2644880870",
+        "email": "nhomconstrucciones@gmail.com",
         "facebook": "fb.com",
         "twitter": "twitter.com",
         "youtube": "youtube.com",
-        "instagram": "instagram.com"
+        "instagram": "instagram.com",
+        "whatsapp":"whatsapp.com"
     },
     "Features": [{
             "icon": "fa fa-comments-o",

@@ -43,12 +43,12 @@ export const Navigation = (props) => {
           
             <li>
               <a href='#about' className='page-scroll'  onClick={()=>cerrar()}>
-                QUIENES SOMOS?
+                ¿QUIÉNES SOMOS?
               </a>
             </li>
             <li>
               <a href='#services' className='page-scroll' onClick={()=>cerrar()}>
-              QUÉ HACEMOS?
+              ¿QUÉ HACEMOS?
               </a>
             </li>
             <li>
@@ -58,7 +58,7 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a href='#contact' className='page-scroll' onClick={()=>cerrar()}>
-                CONTACTOS
+                CONTACTO
               </a>
             </li>
             
